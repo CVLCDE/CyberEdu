@@ -1,0 +1,35 @@
+/*targets the wrapper div of a card*/
+.card-wrapper {
+	background-color: #23235b;
+	width: 400px;
+	height: 500px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*targets the h3 of a card's title*/
+.card-title {
+	color: white;
+	margin: 0;
+	padding: 5%;
+	text-align: center;
+	background-color: #4f67ff;
+	border-radius: 10px 10px 0 0;
+}
+
+/*targets the image wrapper div of a card*/
+.card-image-wrapper {
+	border-radius: 10px 10px 0 0;
+}
+
+/*targets the actual image of the card*/
+.card-image {
+	width: 100%;
+	height: 225px;
+}
+
+/*targets the paragraph wrapper div */
+.card-description-wrapper {
+	color: white;
+	padding: 5%;
+}

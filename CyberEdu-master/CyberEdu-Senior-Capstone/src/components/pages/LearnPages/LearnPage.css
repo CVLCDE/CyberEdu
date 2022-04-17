@@ -1,0 +1,178 @@
+.topic-content-container {
+	display: grid;
+	position: absolute;
+	top: 10%;
+	width: 100%;
+	height: 90%;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		'topic-icon topic-content-wrapper topic-content-wrapper topic-content-wrapper'
+		'topic-menu-wrapper topic-content-wrapper topic-content-wrapper topic-content-wrapper'
+		'topic-menu-wrapper previous-button . next-button';
+}
+
+.topic-icon {
+	grid-area: topic-icon;
+	align-self: center;
+	justify-self: center;
+	width: 200px;
+	height: 200px;
+}
+
+.topic-menu-wrapper {
+	grid-area: topic-menu-wrapper;
+	justify-self: center;
+	width: 90%;
+	height: 90%;
+	overflow-y: scroll;
+	scrollbar-width: none;
+}
+
+.topic-menu-wrapper::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
+
+.topic-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	background-color: #314aeb;
+	border-radius: 15px 15px 0 0;
+}
+
+.topic-menu a {
+	display: block;
+	width: 100%;
+	margin: 2% 0;
+	text-align: center;
+	font-size: 16px;
+	color: black;
+	text-decoration: none;
+}
+
+.text-content-wrapper {
+	border-bottom: solid #3e404f 4px;
+	width: 90%;
+	padding-top: 2%;
+	padding-bottom: 5%;
+	margin: auto;
+}
+
+.text-content {
+	height: 100%;
+	width: 90%;
+	margin: auto;
+	background-color: rgba(114, 113, 113, 0.404);
+	font-size: 24px;
+	color: white;
+	padding: 2%;
+	border-radius: 15px;
+	line-height: 150%;
+	letter-spacing: 1.5px;
+}
+
+.text-content-title {
+	text-align: left;
+	margin: 0;
+	margin-bottom: 5%;
+	font-size: 48px;
+}
+
+.topic-content-wrapper {
+	grid-area: topic-content-wrapper;
+}
+
+.topic-content {
+	height: 120%;
+	width: 90%;
+	margin: auto;
+	background-color: #1b1f38;
+	font-size: 48px;
+	color: white;
+	overflow-y: scroll;
+	border-radius: 25px 15px 15px 25px;
+}
+
+.topic-content div:last-child {
+	border-bottom: none;
+}
+
+.topic-content::-webkit-scrollbar {
+	width: 24px;
+}
+
+.topic-content::-webkit-scrollbar-track {
+	background-color: #4f67ff;
+	border-radius: 5px;
+}
+
+.topic-content::-webkit-scrollbar-thumb {
+	background: #314aeb;
+	border-radius: 5px;
+}
+
+.topic-content-title {
+	font-size: 48px;
+	color: white;
+	text-align: center;
+}
+
+.previous-button {
+	grid-area: previous-button;
+	align-self: end;
+	justify-self: center;
+	height: 100px;
+	width: 300px;
+}
+
+.next-button {
+	grid-area: next-button;
+	align-self: end;
+	justify-self: center;
+	height: 100px;
+	width: 300px;
+	text-align: right;
+}
+
+.previous-button button,
+.next-button button {
+	width: 200px;
+	height: 50px;
+	border: none;
+	border-radius: 12px;
+	background-color: #314aeb;
+	color: white;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+		0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition-duration: 0.4s;
+}
+
+.previous-button button:hover,
+.next-button button:hover {
+	background-color: #182479;
+}
+
+#email-phishing-content h4,
+#impersonation-content h4,
+#shoulder-surfing-content h4,
+#tailgating-content h4,
+#dumpster-diving-content h4,
+#watering-hole-content h4,
+#virus-content h4,
+#worms-content h4,
+#logic-bombs-content h4,
+#backdoor-content h4,
+#trojans-content h4,
+#rats-content h4,
+#keyloggers-content h4,
+#spyware-content h4,
+#adware-content h4,
+#bots-content h4,
+#rootkits-content h4 {
+	text-align: center;
+	margin: 1% 0;
+}

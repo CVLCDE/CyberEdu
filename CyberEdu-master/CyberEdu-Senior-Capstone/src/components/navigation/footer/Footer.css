@@ -1,0 +1,106 @@
+/*
+	- Targets the wrapper div of the entire footer component
+	- Footer component is positioned absolutely (at the bottom of the page), 
+	  so it rests on top of the ParticleJS component
+	- The content of the footer is placed within a grid
+*/
+.footer-wrapper {
+	top: 102%;
+	height: 350px;
+	width: 100%;
+	background-color: #141831a6;
+	position: absolute;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.25fr 0.5fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		'footer-logo-wrapper footer-logo-wrapper footer-logo-wrapper footer-logo-wrapper'
+		'site-map-wrapper licenses-wrapper copyright-wrapper about-us-wrapper';
+}
+
+/*Targets the title of the footer */
+.footer-site-name {
+	font-size: 64px;
+	color: white;
+	margin-bottom: 0;
+	display: inline;
+	margin-left: 1%;
+}
+
+/*Targets the footer's site icon image*/
+.footer-icon {
+	width: 90px;
+	height: 90px;
+	vertical-align: bottom;
+}
+
+/*Targets the footer's site icon text*/
+.footer-logo-text {
+	margin-bottom: 1%;
+}
+
+/*Targets all the category headers and category list-items within the footer's grid */
+.site-map-header,
+.licenses-header,
+.copyright-header,
+.about-us-header,
+.site-map-ul li,
+.licenses-ul li,
+.copyright-ul li,
+.about-us-ul li {
+	color: white;
+}
+
+/*Targets all the category headers within the footer's grid*/
+.site-map-header,
+.licenses-header,
+.copyright-header,
+.about-us-header {
+	text-align: center;
+}
+
+/*Targets all the category list-containers within the footer's grid*/
+.site-map-ul,
+.licenses-ul,
+.copyright-ul,
+.about-us-ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+.site-map-ul a,
+.licenses-ul a,
+.copyright-ul a,
+.about-us-ul a {
+	color: white;
+}
+
+/* The following styles below are used to assign respective classNames from the Footer component to their place within 
+	the grid area.*/
+.footer-logo-wrapper {
+	grid-area: footer-logo-wrapper;
+	margin: 1%;
+}
+
+.site-map-wrapper {
+	grid-area: site-map-wrapper;
+	justify-self: end;
+}
+
+.licenses-wrapper {
+	grid-area: licenses-wrapper;
+	justify-self: end;
+}
+
+.copyright-wrapper {
+	grid-area: copyright-wrapper;
+	justify-self: end;
+}
+
+.about-us-wrapper {
+	grid-area: about-us-wrapper;
+	justify-self: center;
+}
